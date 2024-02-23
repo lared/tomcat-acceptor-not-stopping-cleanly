@@ -1,0 +1,25 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		version(21)
+	}
+}
+
+application {
+	mainClass = 'SlowStop'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.apache.tomcat.embed:tomcat-embed-core:10.1.19'
+}
